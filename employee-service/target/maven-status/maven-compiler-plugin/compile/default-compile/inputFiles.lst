@@ -1,1 +1,12 @@
+/Users/katrinasmith/CODE_WORKSPACES/CODE_SpringBoot/springboot-microservices/employee-service/src/main/java/com/smithexperience/employeeservice/entity/Employee.java
+/Users/katrinasmith/CODE_WORKSPACES/CODE_SpringBoot/springboot-microservices/employee-service/src/main/java/com/smithexperience/employeeservice/mapper/AutoEmployeeMapper.java
+/Users/katrinasmith/CODE_WORKSPACES/CODE_SpringBoot/springboot-microservices/employee-service/src/main/java/com/smithexperience/employeeservice/dto/EmployeeDto.java
+/Users/katrinasmith/CODE_WORKSPACES/CODE_SpringBoot/springboot-microservices/employee-service/src/main/java/com/smithexperience/employeeservice/exceptions/ResourceNotFoundException.java
 /Users/katrinasmith/CODE_WORKSPACES/CODE_SpringBoot/springboot-microservices/employee-service/src/main/java/com/smithexperience/employeeservice/EmployeeServiceApplication.java
+/Users/katrinasmith/CODE_WORKSPACES/CODE_SpringBoot/springboot-microservices/employee-service/src/main/java/com/smithexperience/employeeservice/exceptions/CustomErrorDetails.java
+/Users/katrinasmith/CODE_WORKSPACES/CODE_SpringBoot/springboot-microservices/employee-service/src/main/java/com/smithexperience/employeeservice/controller/EmployeeController.java
+/Users/katrinasmith/CODE_WORKSPACES/CODE_SpringBoot/springboot-microservices/employee-service/src/main/java/com/smithexperience/employeeservice/repository/EmployeeRepository.java
+/Users/katrinasmith/CODE_WORKSPACES/CODE_SpringBoot/springboot-microservices/employee-service/src/main/java/com/smithexperience/employeeservice/exceptions/GlobalExceptionHandler.java
+/Users/katrinasmith/CODE_WORKSPACES/CODE_SpringBoot/springboot-microservices/employee-service/src/main/java/com/smithexperience/employeeservice/service/impl/EmployeeServiceImpl.java
+/Users/katrinasmith/CODE_WORKSPACES/CODE_SpringBoot/springboot-microservices/employee-service/src/main/java/com/smithexperience/employeeservice/service/EmployeeService.java
+/Users/katrinasmith/CODE_WORKSPACES/CODE_SpringBoot/springboot-microservices/employee-service/src/main/java/com/smithexperience/employeeservice/exceptions/EmailAlreadyExistException.java
