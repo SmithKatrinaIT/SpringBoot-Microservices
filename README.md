@@ -2,10 +2,14 @@
 
 ## Project is the result of a Spring Boot tutorial from Instructor Ramesh Fadatare
 
-I've included a lot of comments throughout the classes/microservice logic to drive home the concepts outlined in the tutorial.
+I've included a lot of comments throughout the classes/microservice logic 
+to drive home the concepts outlined in the tutorial.
 
-In order to reflect back on the use of different libraries/dependency code examples, I've opted to commented out the replaced code, whereas the 
-instructor will usually just completely remove/delete the previous code usage.
+In order to reflect back on the use of different libraries/dependency code examples, 
+I've opted to commented out the replaced code, whereas the instructor will usually 
+just completely remove/delete the previous code usage.
+
+---
 
 ### Concepts covered throughout this repo include the following:
 
