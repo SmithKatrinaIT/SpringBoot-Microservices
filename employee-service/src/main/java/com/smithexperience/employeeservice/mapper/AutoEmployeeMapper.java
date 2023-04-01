@@ -1,5 +1,6 @@
 package com.smithexperience.employeeservice.mapper;
 
+import com.smithexperience.employeeservice.dto.DepartmentDto;
 import com.smithexperience.employeeservice.dto.EmployeeDto;
 import com.smithexperience.employeeservice.entity.Employee;
 import org.mapstruct.Mapper;
@@ -15,4 +16,6 @@ public interface AutoEmployeeMapper {
 
     //Convert UserDTO into User JPA Entity
     Employee mapEmployeeJPAEntity(EmployeeDto employeeDto);
+
+
 }

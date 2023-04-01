@@ -1,5 +1,6 @@
 package com.smithexperience.employeeservice.controller;
 
+import com.smithexperience.employeeservice.dto.APIResponseDto;
 import com.smithexperience.employeeservice.dto.EmployeeDto;
 import com.smithexperience.employeeservice.service.EmployeeService;
 import lombok.AllArgsConstructor;
@@ -29,4 +30,13 @@ public class EmployeeController {
         EmployeeDto employeeDto = employeeService.getEmployeeById(employeeId);
         return new ResponseEntity<>(employeeDto, HttpStatus.OK);
     }
+
+    // this API use a custom DTO that captures both EmployeeService and DepartmentService objects
+    @GetMapping("details/{employee-id}")
+    public ResponseEntity<APIResponseDto> getEmployeeDetailsById(@PathVariable("employee-id") Long employeeId) {
+
+       APIResponseDto apiResponseDto = employeeService.getEmployeeDetailsById(employeeId);
+        return new ResponseEntity<>(apiResponseDto, HttpStatus.OK);
+    }
+
 }
