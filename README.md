@@ -37,7 +37,11 @@ just completely remove/delete the previous code usage.
   - Microservice Registry: 
     - Spring Cloud Netflix Eureka: ability to Load Balance services   
   - API Gateway using Spring Cloud
-  - Spring Cloud Config Server
+  
+#### Spring Cloud Config Server
+  - Acts as the central location for the configuration files for all the microservices registered with the Eureka Server
+  - It is a separate REPO on to itself located:
+    - [Config-Server] (https://github.com/SmithKatrinaIT/SpringBoot-Microservices-Config-Server.git)
   
   
 
