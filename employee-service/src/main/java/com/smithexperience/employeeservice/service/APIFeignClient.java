@@ -24,6 +24,6 @@ import java.net.URL;
 
 public interface APIFeignClient {
 
-    @GetMapping("api/department/{dept-code}")
+    @GetMapping("api/departments/{dept-code}")
     DepartmentDto getDepartment(@PathVariable("dept-code") String deptCode);
 }
