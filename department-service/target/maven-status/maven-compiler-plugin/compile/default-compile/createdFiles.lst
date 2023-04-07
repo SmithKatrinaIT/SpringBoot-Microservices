@@ -7,6 +7,7 @@ com/smithexperience/departmentservice/mapper/AutoDepartmentMapper.class
 com/smithexperience/departmentservice/exceptions/GlobalExceptionHandler.class
 com/smithexperience/departmentservice/exceptions/EmailAlreadyExistException.class
 com/smithexperience/departmentservice/exceptions/CustomErrorDetails.class
+com/smithexperience/departmentservice/controller/MessageController.class
 com/smithexperience/departmentservice/mapper/AutoDepartmentMapperImpl.class
 com/smithexperience/departmentservice/exceptions/ResourceNotFoundException.class
 com/smithexperience/departmentservice/service/DepartmentService.class

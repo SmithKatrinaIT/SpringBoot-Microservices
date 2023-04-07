@@ -1,17 +1,13 @@
 # SpringBoot-Microservices
+ 
+## **_PURPOSE:_** Deep-dive in understanding the structure and concepts of Microservices with the use of the Spring Boot 3.0 framework. Along with other essential libraries used currently in the industry.
 
-## Project is the result of a Spring Boot tutorial from Instructor Ramesh Fadatare
-
-I've included a lot of comments throughout the classes/microservice logic 
-to drive home the concepts outlined in the tutorial.
-
-In order to reflect back on the use of different libraries/dependency code examples, 
-I've opted to commented out the replaced code, whereas the instructor will usually 
-just completely remove/delete the previous code usage.
+> ## Project is an detailed progression through an Udemy Spring Boot tutorial led by Instructor Ramesh Fadatare
+> - Code is heavily commented throughout to cement the concepts outlined in the hands-on tutorial
+> - Some viable code is commented out in order to reflect back or differentiate the invocation of competing libraries/dependency code examples
 
 ---
-
-### Concepts covered throughout this repo include the following:
+### Concepts covered are as followed:
 
 - Spring Boot API basics
 - CRUD REST API with MySQL
@@ -37,11 +33,11 @@ just completely remove/delete the previous code usage.
   - Microservice Registry: 
     - Spring Cloud Netflix Eureka: ability to Load Balance services   
   - API Gateway using Spring Cloud
-  
-#### Spring Cloud Config Server
-  - Acts as the central location for the configuration files for all the microservices registered with the Eureka Server
-  - It is a separate REPO on to itself located:
+- Spring Cloud Config Server
+  - Acts as the central location for the registered microservices configuration files within the Eureka Server
+  - It is a separate REPO on to itself located here:
     - [Config-Server] (https://github.com/SmithKatrinaIT/SpringBoot-Microservices-Config-Server.git)
-  
-  
+- Spring Cloud Bus: the message broker that loads the configuration changes automatically
+ - RabitMQ
+ - Docker
 
