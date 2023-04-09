@@ -37,7 +37,8 @@
   - Acts as the central location for the registered microservices configuration files within the Eureka Server
   - It is a separate REPO on to itself located here:
     - [Github - SmithKatrinaIT/SpringBoot-Microservices-Config-Server](https://github.com/SmithKatrinaIT/SpringBoot-Microservices-Config-Server.git)
-- Spring Cloud Bus: the message broker that loads the configuration changes automatically
- - RabbitMQ: Great video on how RabbitMQ works and what it is - [YouTube: What is RabbitMQ](https://www.youtube.com/watch?v=7rkeORD4jSw&t=536s)
- - Docker
+- Message Brokers: allows services to be refreshed automatically upon configuration changes without restarting the service
+  - Spring Cloud Bus: lightweight Message Broker 
+  - RabbitMQ: Open-source Message Broker. Great video on how RabbitMQ works and what it is - [YouTube: What is RabbitMQ](https://www.youtube.com/watch?v=7rkeORD4jSw&t=536s)
+    - Docker - used to create the docker container for a RabbitMQ image
 
