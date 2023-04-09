@@ -25,10 +25,10 @@ public class EmployeeServiceApplication {
      *  NOTE: We're creating a Global HTTP Client - Spring Bean- at APP level to be able to use throughout the application
      */
     //Option 1:
-    /*@Bean
+    @Bean
     public RestTemplate restTemplate() {
         return new RestTemplate();
-    }*/
+    }
 
     //Option 2:
     /*@Bean

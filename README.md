@@ -34,11 +34,22 @@
     - Spring Cloud Netflix Eureka: ability to Load Balance services   
   - API Gateway using Spring Cloud
 - Spring Cloud Config Server
-  - Acts as the central location for the registered microservices configuration files within the Eureka Server
-  - It is a separate REPO on to itself located here:
+  - Central location for the registered microservices configuration files within the Eureka Server
+  - A separate REPO onto itself located here:
     - [Github - SmithKatrinaIT/SpringBoot-Microservices-Config-Server](https://github.com/SmithKatrinaIT/SpringBoot-Microservices-Config-Server.git)
-- Message Brokers: allows services to be refreshed automatically upon configuration changes without restarting the service
+- Message Brokers: refresh microservices automatically upon configuration changes without restarting the service
   - Spring Cloud Bus: lightweight Message Broker 
-  - RabbitMQ: Open-source Message Broker. Great video on how RabbitMQ works and what it is - [YouTube: What is RabbitMQ](https://www.youtube.com/watch?v=7rkeORD4jSw&t=536s)
-    - Docker - used to create the docker container for a RabbitMQ image
+  - RabbitMQ: Open-source Message Broker. 
+    - How RabbitMQ works and what it is - [YouTube: What is RabbitMQ](https://www.youtube.com/watch?v=7rkeORD4jSw&t=536s)
+    - Docker - RabbitMQ image
+- Distributed Tracing [of microservices]
+  - Sleuth: not applicable for Spring 3.0
+  - Sleuth & Zipkin [UI feature]:  - for Spring Boot v2.7 or below
+    - Add `spring-cloud-starter-sleuth or spring-cloud-starter-sleuth-zipkin` dependency 
+      - Tutorial: [Spring Cloud Sleuth & Zipkin](https://www.youtube.com/watch?v=M19XC0zJUrA) 
+      - [Download Zipkin jar file](https://zipkin.io/pages/quickstart)
+  - Micrometer [UI feature] For Spring Boot 3: Sleuth-Zipkin was moved to Micrometer
+    - This project uses Micrometer and Docker Zipkin Image
+    - Follow [Micrometer and Zipkin: How to Trace HTTP Requests in Spring Boot 3](https://www.appsdeveloperblog.com/micrometer-and-zipkin-in-spring-boot/)
+ 
 

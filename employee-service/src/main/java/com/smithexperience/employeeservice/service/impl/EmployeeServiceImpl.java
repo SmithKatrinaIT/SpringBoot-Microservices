@@ -10,13 +10,17 @@ import com.smithexperience.employeeservice.mapper.AutoEmployeeMapper;
 import com.smithexperience.employeeservice.repository.EmployeeRepository;
 import com.smithexperience.employeeservice.service.APIFeignClient;
 import com.smithexperience.employeeservice.service.EmployeeService;
+import feign.Capability;
+import io.micrometer.core.instrument.MeterRegistry;
 import lombok.AllArgsConstructor;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.context.annotation.Bean;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.reactive.function.client.WebClient;
 
+import java.security.DrbgParameters;
 import java.util.Optional;
 
 @Service
@@ -34,13 +38,14 @@ public class EmployeeServiceImpl implements EmployeeService {
      *          Spring handles implementation. Operates off the 'thread-per-request-model'
      */
     //Option: 1
-    //private RestTemplate restTemplate;
+    private RestTemplate restTemplate;
 
     //Option 2: recommended over RestTemplate
     //private WebClient webClient;
 
     //Option 3:
     private APIFeignClient apiFeignClient; //our custom FeignClient interface
+
 
     @Override
     public EmployeeDto saveEmployee(EmployeeDto employeeDto) {
@@ -93,9 +98,11 @@ public class EmployeeServiceImpl implements EmployeeService {
          * --use Custom DTO that contains both objects from the communicating services
          * --return the Custom DTO to the client
          */
-        /*OPTION 1:ResponseEntity<DepartmentDto> responseEntity = restTemplate.getForEntity(
+        //OPTION 1:
+        ResponseEntity<DepartmentDto> responseEntity = restTemplate.getForEntity(
                 "http://localhost:8080/api/departments/" + employee.getDepartmentCode(), DepartmentDto.class);
-        DepartmentDto departmentDto = responseEntity.getBody();*/
+        DepartmentDto departmentDto = responseEntity.getBody();
+
 
         /*OPTION 2:DepartmentDto departmentDto = webClient.get()
                 .uri("http://localhost:8080/api/departments/" + employee.getDepartmentCode())
@@ -104,7 +111,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                 .block();*/
 
         /*OPTION 3:*/
-        DepartmentDto departmentDto = apiFeignClient.getDepartment(employee.getDepartmentCode());
+        //DepartmentDto departmentDto = apiFeignClient.getDepartment(employee.getDepartmentCode());
 
         //must map employeeDTO AFTER calling retrieving DepartmentDTO from DepartmentService for this to work
         //Synchronous call
